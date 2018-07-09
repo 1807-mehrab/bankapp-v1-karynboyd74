@@ -24,7 +24,7 @@ public class Main {
                     if (amount <= 0) {
                         System.out.println("Invalid amount entered. Please enter a dollar amount greater than $0.00. ");
                        } else {
-                           deposit(amount);
+                           balance = balance += amount;
                         System.out.println("$" + amount + " has been deposited.");
                         System.out.println("Your balance is now: $" + balance);
                        }
@@ -54,29 +54,5 @@ public class Main {
                     break;
             }
         } while (!exit);
-    }
-
-    public class Account {
-        private double balance = 0;
-    
-        public Account(double balance) {
-            this.balance = balance;
-        }
-    
-       public void deposit() {
-            double amount;
-            System.out.println("Enter the amount to deposit: ");
-            amount = get.nextDouble();
-            balance = balance + amount;
-            System.out.println("Deposited $" + amount + ". Your balance is $" + balance);
-       }
-
-       public void withdraw() {
-           // withdraw stuff
-       }
-
-       public double showBalance() {
-           return balance;
-       }
     }
 }
