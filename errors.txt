@@ -1,0 +1,17 @@
+Welcome to the Bank of Boyd! Please make your selection from the following menu.
+Select 1 for Deposit.
+Select 2 for Withdrawal.
+Select 3 to check your current balance.
+Select 0 for Exit.
+1
+You have selected Deposits.
+Enter the amount you would like to deposit: 
+20.00
+Please enter the savings account number you would like to transfer the deposit from (1 - 5): 
+1
+Please enter the checking account number you would like to transfer the deposit into (1 - 5): 
+2
+Exception in thread "main" java.lang.NullPointerException
+	at com.revature.bankApp.Account.deposit(Account.java:41)
+	at com.revature.bankApp.Menu.displayMenu(Menu.java:29)
+	at com.revature.bankApp.App.main(App.java:14)
